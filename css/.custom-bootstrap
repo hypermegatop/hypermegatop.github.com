@@ -1,0 +1,6 @@
+Styles de Calepin:
+
+@baseFontFamily = Palatino, 'Palatino Linotype', Georgia, serif
+@baseFontSize = 15px
+@baseLineHeight = 21px
+@textColor = #444

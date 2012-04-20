@@ -9,7 +9,7 @@ author: Martin Angers
 			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			<div class="date">{{ post.author }} <span>{{ post.date | date:"%Y-%m-%d" }}</span></div>
 		</header>
-		<div class="content">{{ abstract }}</div>
+		<div class="content">{{ post.abstract }}</div>
 	</article>
 {% endfor %}
 <div class="pagination">

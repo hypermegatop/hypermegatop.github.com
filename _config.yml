@@ -1,0 +1,5 @@
+auto: true
+pygments: true
+paginate: 10
+permalink: /:year/:month/:day/:title.html
+title: hypermégatop, parfois

@@ -3,4 +3,22 @@ layout: master
 title: hypermégatop, parfois
 author: Martin Angers
 ---
-<h1>{{ page.title }}</h1>
+{% for post in paginator.posts %}
+	<article>
+		<header>
+			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<div class="date">{{ post.author }} <span>{{ post.date | date:"%Y-%m-%d" }}</span></div>
+		</header>
+		<div class="content">{{ abstract }}</div>
+	</article>
+{% endfor %}
+<div class="pagination">
+	<ul>
+		{% if paginator.next_page %}
+		<li class="prev"><a href='/page{{ paginator.next_page }}'>&larr; Anciens billets</a></li>
+		{% endif %}
+		{% if paginator.previous_page %}
+		<li class="next"><a href='/page{{ paginator.previous_page }}'>Récents billets &rarr;</a></li>
+		{% endif %}
+	</ul>
+</div>

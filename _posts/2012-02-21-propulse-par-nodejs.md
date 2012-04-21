@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Propulsé par node.js
+title: "Propulsé par node.js"
 category: technologie
 author: Martin Angers
 abstract: Le développement d'une application Web est ponctué d'une multitude de choix technologiques. Pour le compte rendu Web, le coeur technologique, celui qui a orienté pratiquement tous les autres choix, n'a pourtant pas fait l'objet d'une réflexion, d'une étude comparative. Loin s'en faut. Il a plutôt été l'élément déclencheur de tout le projet.

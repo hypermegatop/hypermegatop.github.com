@@ -1,6 +1,6 @@
 ---
 layout: post
-title: implement.js: typage fort et Javascript
+title: "implement.js: typage fort et Javascript"
 category: technologie
 author: Martin Angers
 abstract: L'injection de dépendance avec Javascript a comme conséquence de ne pouvoir assumer que les fonctionnalités offertes par l'instance reçue seront celles attendues.

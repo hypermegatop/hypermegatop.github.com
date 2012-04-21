@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expérimentations sur l'injection de dépendance avec node.js
+title: "Expérimentations sur l'injection de dépendance avec node.js"
 category: technologie
 author: Martin Angers
 abstract: L'injection de dépendance permet de découpler les différentes composantes d'une application pour en faciliter l'entretien, la testabilité, circonscrire l'impact des changements, mais aussi pour imposer une façon d'aborder la création de l'application en une aggrégation de pièces simples, à la responsabilité ciblée, et à l'API bien défini.

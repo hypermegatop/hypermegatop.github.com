@@ -1,6 +1,6 @@
 auto: true
 pygments: false
 paginate: 6
-permalink: /:year/:month/:day/:title.html
-title: hypermégatop, parfois
+permalink: /:year/:month/:title.html
+title: "hypermégatop, parfois"
 url: http://hypermegatop.github.com/

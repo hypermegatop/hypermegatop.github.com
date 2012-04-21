@@ -1,6 +1,6 @@
 auto: true
 pygments: true
-paginate: 10
+paginate: 6
 permalink: /:year/:month/:day/:title.html
 title: hypermégatop, parfois
 url: http://hypermegatop.github.com/

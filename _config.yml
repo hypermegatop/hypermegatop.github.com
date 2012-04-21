@@ -1,4 +1,5 @@
 auto: true
+safe: true
 pygments: false
 paginate: 6
 permalink: /:year/:month/:title.html

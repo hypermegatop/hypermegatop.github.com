@@ -1,6 +1,6 @@
 auto: true
 safe: true
-markdown: RDiscount
+markdown: rdiscount
 pygments: false
 paginate: 6
 permalink: /:year/:month/:title.html

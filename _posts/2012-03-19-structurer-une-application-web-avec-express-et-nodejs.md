@@ -31,7 +31,6 @@ On comprend aisément que *public* contient les contenus non sécurisés, utilis
 
 Le répertoire *routes* porte à confusion, car à l'analyse du code qu'il contient (dans *index.js*), on n'y retrouve non pas la définition des URLs et des verbes HTTP supportés par l'application (la *route*), mais seulement l'implémentation, la logique applicative rattachée à cette route:
 
-    :::javascript
     // Fichier /routes/index.js
     exports.index = function(req, res){
         res.render('index', { title: 'Express' })
@@ -39,7 +38,6 @@ Le répertoire *routes* porte à confusion, car à l'analyse du code qu'il conti
 
 La définition de la route comme telle, elle, se retrouve à la racine de l'application, dans le fichier maître *app.js*:
 
-    :::javascript
     // Fichier /app.js
     var express = require('express')
       , routes = require('./routes')

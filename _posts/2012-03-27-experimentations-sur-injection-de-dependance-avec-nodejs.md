@@ -18,14 +18,12 @@ Avec un langage dynamique comme Javascript et son [héritage par prototype][prot
 
 *	**simple-DI** : Cette approche classique, toute simple, reçoit les dépendances en paramètres, et le fichier *app.js* est responsable de l'assemblage. Par exemple, dans le module *router*:
 	
-		:::javascript
 		module.exports = function (server, handler) {
 			server.get('/', handler.renderIndex);
 		};
 
 	et dans *app.js*:
 
-		:::javascript
 		var server = require('./lib/server'),
 			db = require('./lib/db'),
 			handler = require('./lib/handler')(db);
@@ -36,7 +34,6 @@ Avec un langage dynamique comme Javascript et son [héritage par prototype][prot
 
 *	**prototype-extension** : Cette branche utilise l'extension du prototype du HTTPServer de Express pour injecter le module *config* dans le module *server*. C'est un parfait exemple de ce que j'entends quand je parle d'obtenir "les bénéfices de l'injection de dépendance", et non la retranscription du patron. Cette solution repose toutefois sur une hypothèse non négligeable: la dépendance commune de ces deux modules sur Express, et cette dépendance sur Express  n'est d'ailleurs pas découplée dans mon *boilerplate*. Mais puisqu'il s'agit d'un gabarit d'application Web visant précisément ce cadre d'application (ce *framework*), c'est une concession que je juge acceptable. Ça donne ceci:
 
-		:::javascript
 		// * * * * config.js * * * *
 		express.HTTPServer.prototype.applyConfiguration = function () {
 			...

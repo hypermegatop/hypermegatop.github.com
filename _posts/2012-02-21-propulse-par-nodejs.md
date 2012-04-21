@@ -27,7 +27,6 @@ Ce n'est [ni le seul][5], [ni le premier][6] projet adoptant cette philosophie, 
 synchrones, bloquantes, l'exception à spécifier explicitement plutôt que la règle. Cet exemple simpliste démontre la facilité avec laquelle on peut coder un serveur HTTP qui
 lit et retourne le contenu d'un fichier au client, le tout sans bloquer le traitement:
 
-	:::javascript
 	var http = require('http'),
     	fs = require('fs');
 

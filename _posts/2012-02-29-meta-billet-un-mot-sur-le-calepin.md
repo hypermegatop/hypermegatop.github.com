@@ -23,7 +23,6 @@ Je ferme mon blogue? Je largue les amarres? Mes billets sont toujours confortabl
 
 Le format, la langue que comprend le Calepin, est le [markdown][]. C'est pratiquement un anti-format, en ce sens que le *markdown* est d'abord et avant tout du texte brut, sans flafla, sans encodage binaire ou enrobage XML, pouvant être lu et modifié avec le plus humble des éditeurs de texte. Là où le HTML - un langage de type *markup*, contraste intéressant - ajoute des balises dans le texte, rendant la lecture de la source difficile ou à tout le moins désagréable sans traitement préalable par un fureteur, le *markdown* utilise un nombre limité de légers artifices pour permettre d'identifier, par exemple, des en-têtes, une emphase, ou des points de forme. Ces artifices se traduisent aisément en code HTML ou une multitude d'autres formats via différents outils (dont le Calepin) mais même sous leur forme originelle, l'effet recherché est tout à fait perceptible (on peut d'ailleurs visualiser la source de chaque article sur Calepin en remplaçant le ".html" dans l'adresse par ".txt"). Un exemple:
 
-	:::markdown
 	## Ceci est un en-tête ##
 
 	Et voici une *emphase*, et _une autre_ avec une syntaxe alternative.

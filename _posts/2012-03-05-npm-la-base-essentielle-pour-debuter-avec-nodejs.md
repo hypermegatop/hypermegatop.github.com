@@ -16,7 +16,6 @@ Avec près de 8000 librairies pullulant dans son écosystème, il y a sérieux d
 
 Ensuite, toute librairie publiée dans [le registre de npm][registry] est à portée de main. Pour installer une librairie, par exemple le gestionnaire de versions *n*:
 
-    :::Bash shell scripts
     martin@LilDevil:~/sublime-wrkspc/crw$ npm install n
 	npm http GET https://registry.npmjs.org/n
 	npm http 200 https://registry.npmjs.org/n
@@ -30,13 +29,11 @@ Une fois installée, la librairie est au bon endroit pour être retrouvée par n
 
 Autres commandes de base toujours utiles, pour connaître la version actuelle de npm:
 
-    :::Bash shell scripts
     martin@LilDevil:~/sublime-wrkspc/crw$ npm -v
     1.1.4
 
 Et pour lister les librairies installées dans le répertoire courant (dans cet exemple, les librairies utilisées par le [Compte Rendu Web][crw] à ce point-ci de son développement):
 
-    :::Bash shell scripts
     martin@LilDevil:~/sublime-wrkspc/crw$ npm ls
 	crw@0.1.0 /home/martin/sublime-wrkspc/crw
 	├── debug@0.5.0 
@@ -64,7 +61,6 @@ Et pour lister les librairies installées dans le répertoire courant (dans cet 
 
 `npm list` est équivalent, et `npm ll` (ou `npm la`) offre des informations plus détaillées. Par défaut, npm conserve toutes les dépendances localement, dans un sous-répertoire "node_modules" du répertoire courant. Ainsi, comme chaque librairie installée vient avec ses propres dépendances dans son propre sous-répertoire "node_modules", une application node peut utiliser les librairies A et B, chacune ayant une dépendance sur C, mais A et B peuvent utiliser une version différente de C sans problème. On en voit un exemple concret sous la librairie *express*, qui dépend directement sur *mime*, alors que sa dépendance *connect* dépend aussi sur *mime*, mais dans une version distincte, et ce sans conflit:
 
-    :::Bash shell scripts
     ├─┬ express@2.5.8 
 	│ ├─┬ connect@1.8.5 
 	│ │ ├── formidable@1.0.9 
@@ -83,7 +79,6 @@ Parfois, on peut préférer une installation globale d'une librairie, par exempl
 
 J'ai mentionné [le registre de npm][registry], qui permet de rechercher avec des mots-clefs dans les nombreuses librairies disponibles. Or, il n'est pas nécessaire d'aller sur le site Web pour effectuer ces recherches. Avec npm, on a ce registre au bout des doigts, exploitable avec de simples commandes.
 
-    :::Bash shell scripts
     martin@LilDevil:~$ npm search /^jscov
 	NAME        DESCRIPTION                    AUTHOR    DATE              KEYW
 	jscoverage  jscoverage module for node.js  =kate.sf  2012-02-28 02:11

@@ -1,4 +1,4 @@
 jQuery(function($) {
-	$("code").addClass("prettyprint linenums");
+	$("pre").addClass("prettyprint linenums");
 	prettyPrint();
 });

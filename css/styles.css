@@ -1,5 +1,5 @@
 /* #Site Styles
- * as-is from Calepin.co, now open source
+ * Mostly as-is from Calepin.co, now open source
  * https://github.com/jokull/calepin
 ================================================== */
 
@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 li { line-height: 24px }
 
+/*
 header { 
   margin-bottom: 30px; 
   background: #f0f0f0; 
@@ -34,8 +35,9 @@ h2.section {
   margin-bottom: 20px;
   font-family: Helvetica, Arial, sans-serif;
 }
+*/
 
-iframe, object { margin-bottom: 1em; }
+iframe, object { margin-top: 0.5em; }
 
 footer { 
   font-size: 14px;
@@ -51,27 +53,6 @@ footer .columns {
 footer a { text-shadow: none; color: #222; }
 footer .twitter { position: absolute; left: 0; top: 20px; }
 
-table {
-  width: 100%;
-  margin-bottom: 18px;
-  padding: 0;
-  font-size: 13px;
-  border-collapse: collapse; }
-table th, table td {
-  padding: 10px 10px 9px;
-  line-height: 18px;
-  text-align: left; }
-table th {
-  padding-top: 9px;
-  font-weight: bold;
-  vertical-align: middle; }
-table td {
-  vertical-align: top;
-  border-top: 1px solid #ddd; }
-table tbody th {
-  border-top: 1px solid #ddd;
-  vertical-align: top; }
-
 .permalink { text-align: right; }
 .permalink a { text-transform: uppercase; font-size: 8pt; color: #CCC; }
 
@@ -84,12 +65,14 @@ time.published a { color: #666; text-decoration: none; }
 #post-list li { margin-bottom: 40px; }
 #post-list li h2 { font-size: 17pt; line-height: 29px; font-weight: normal; 
                    margin: 0; }
-#post-list li h2 a { text-decoration: none; }
+#post-list li h2 a { text-decoration: none; color: black; }
 #post-list li h2 a:hover { text-decoration: underline; }
 #post-list li h2 .pictogram { color: #CCC; }
 #post-list p.abstract { font-size: 11pt; }
 
 article { margin-bottom: 3em; }
+
+/*
 article p,
 article li, 
 article blockquote,
@@ -101,13 +84,13 @@ article h6,
 article h6,
 article hr, 
 article table { max-width: 560px; }
-
+*/
 article ul { list-style: disc outside; margin-left: 2em; }
-article blockquote { font-size: 14px; line-height: 19px; padding: 0 12px; margin: 20px 8px; }
-article blockquote p { font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; }
+article blockquote { color: #777; font-size: 14px; line-height: 19px; padding: 0 12px; margin: 20px 8px; }
+article blockquote p { color: #777; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; }
 
 article .entry-header { margin-bottom: 20px; }
-article .entry-header h2 { margin: 20px 0; }
+article .entry-header h1 { margin-top: 0px; }
 article .entry-header a { text-decoration: none; border-bottom: 0; }
 article .entry-header a:hover { border-bottom: 1px solid #CCC; }
 article .entry-header .published a { border: 0; color: #888; }
@@ -119,7 +102,8 @@ article .entry-content h4 { font-size: 12pt; }
 article .entry-content h5 { font-size: 10pt; font-weight: bold }
 article .entry-content h6 { font-size: 10pt; margin-bottom: .3em; }
 article .entry-content p,
-article .entry-content li { font-size: 12pt; line-height: 20pt; }
+article .entry-content ul li,
+article .entry-content ol:not(.linenums) li { font-size: 12pt; line-height: 20pt; }
 
 article .metadata { font-size: 11px; color: #888; }
 article .metadata p { margin-bottom: 0; }
@@ -129,11 +113,6 @@ article .metadata address { display: none; }
 sup { vertical-align: .2em; font-size: 80%; margin: -2px 0 0 2px; }
 
 p img { max-width: 100%; }
-code, pre { font-family: "Andale Mono", "courier-new", courier, monospace;
-            font-size: 10pt; }
-code { background: rgba(0,0,0,.05); border-radius: 3px; 
-       text-shadow: 1px 1px 0 white; padding: 1px; }
-pre { margin: 20px 0; line-height: 14pt; }
 small { font-size: 80%; }
 
 /* .container, .container .sixteen.columns { width: 480px; } */
@@ -142,11 +121,9 @@ small { font-size: 80%; }
 
 @media only screen and (max-width: 767px) {
   
-  header { margin-bottom: 15px; }
-  header h1 { padding: 10px 0; }
   footer { font-size: 11px; }
   footer .twitter { position: static; }
-  article .entry-header h2 { font-size: 22px; margin: 10px 0; }
+  article .entry-header h1 { font-size: 22px; margin: 10px 0; }
   time.published { font-size: 11px; }
   
   #post-list li { margin-bottom: 6px; }
@@ -156,6 +133,7 @@ small { font-size: 80%; }
   article .entry-content p,
   article .entry-content li { font-size: 10pt; line-height: 16pt; }
   
+  /*
   article p,
   article li, 
   article blockquote,
@@ -166,5 +144,5 @@ small { font-size: 80%; }
   article h6,
   article h6,
   article hr, 
-  article table { max-width: none; }
+  article table { max-width: none; }*/
 }

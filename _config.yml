@@ -2,7 +2,7 @@ auto: true
 safe: true
 markdown: rdiscount
 pygments: false
-paginate: 6
+paginate: 3
 permalink: /:year/:month/:title.html
 title: "hypermégatop, parfois"
 url: http://hypermegatop.github.com/

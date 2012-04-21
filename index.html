@@ -3,24 +3,28 @@ layout: master
 title: hypermégatop, parfois
 author: Martin Angers
 ---
-{% for post in paginator.posts %}
-	<article>
-		<header>
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<p><small>{{ post.author }} <span>{{ post.date | date:"%Y-%m-%d" }}</span></small>
-			<span class="label">{{ post.category }}</span>
-			</p>
-		</header>
-		<p class="content">{{ post.abstract }}</p>
-	</article>
-{% endfor %}
-<div class="pagination">
-	<ul>
-		{% if paginator.next_page %}
-		<li class="prev"><a href='/page{{ paginator.next_page }}'>&larr; Anciens billets</a></li>
-		{% endif %}
-		{% if paginator.previous_page %}
-		<li class="next"><a href='/page{{ paginator.previous_page }}'>Récents billets &rarr;</a></li>
-		{% endif %}
+<section id="content">
+	<ul id="post-list">
+		{% for post in paginator.posts %}
+			<li>
+				<time class="published" datetime='{{ post.date | date:"%Y-%m-%d" }}'>{{ post.date | date:"%d %B %Y" }}</time>
+				<h2><a href="{{ post.url }}">{{ post.title }}
+					<span class="pictogram">➝</span>
+				</a></h2>
+				<p class="abstract">{{ post.abstract }}</p>
+			</li>
+		{% endfor %}
 	</ul>
-</div>
+	<div class="pagination">
+		<ul>
+			{% if paginator.next_page %}
+			<li class="prev"><a href='/page{{ paginator.next_page }}'>&larr; billets plus vieux</a></li>
+			{% endif %}
+			{% if paginator.previous_page == 1 %}
+			<li class="next"><a href='/'>billets plus récents &rarr;</a></li>
+			{% elsif paginator.previous_page }
+			<li class="next"><a href='/page{{ paginator.previous_page }}'>billets plus récents &rarr;</a></li>
+			{% endif %}
+		</ul>
+	</div>
+</section>

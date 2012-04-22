@@ -57,18 +57,13 @@ h2.section {
 iframe, object { margin-top: 0.5em; }
 
 footer { 
+  padding: 10px;
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold; 
   text-shadow: 0 1px 0 white;
   color: #777; 
   text-align: right; }
-footer .columns { 
-  position: relative; 
-  padding: 20px 0; 
-  border-top: 1px solid #e0e0e0; }
-footer a { text-shadow: none; color: #222; }
-footer .twitter { position: absolute; left: 0; top: 20px; }
 
 .permalink { text-align: right; }
 .permalink a { text-transform: uppercase; font-size: 8pt; color: #CCC; }

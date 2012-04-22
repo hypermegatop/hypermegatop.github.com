@@ -2,6 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>{{ page.title }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Blogue technologique sur node.js, backbone et autres merveilles Javascript.">
@@ -19,6 +20,7 @@
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<link href="/feed.xml" rel="alternate" title="RSS" type="application/rss+xml">
 	</head>
 	<body>
 		<div class="navbar navbar-fixed-top">
@@ -26,7 +28,7 @@
 				<div class="container-fluid">
 					<a class="brand" href="/">{{ site.title }}</a>
 					<div class="pull-right">
-						<a href="https://twitter.com/PuerkitoBio" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @PuerkitoBio</a>
+						<a href="https://twitter.com/PuerkitoBio" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @PuerkitoBio</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</div>
 				</div>
@@ -44,9 +46,16 @@
 		<footer>
 			<p>© Martin Angers 2012</p>
 		</footer>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.2/bootstrap.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.2/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
 		<script src="/js/hmt.js"></script>
-	</body>
+
+		<script>
+			var _gaq=[['_setAccount','UA-29456106-2'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+  	</body>
 </html>

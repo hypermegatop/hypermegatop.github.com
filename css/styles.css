@@ -30,18 +30,19 @@ ul.like-buttons{
   width: 100%;
 }
 ul.like-buttons li{
-    display: block;
     float: left;
     margin-right: 10px;
 }
 
 li.like-gplus {
-  margin-top: 9px;
-  padding-right: 6px;
+  padding-top: 9px;
 }
 
-li.like-facebook {
-  margin-bottom: 12px;
+li.like-twitter {
+}
+
+li.like-facebook span {
+  padding-bottom: 10px;
 }
 
 /*

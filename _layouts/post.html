@@ -3,12 +3,12 @@ layout: master
 ---
 <article class="hentry">
 	<header class="entry-header">
-      <time class="published" datetime='{{ page.date | date:"%Y-%m-%d" }}'>{{ page.date | date:"%d %B %Y" }}</time>
+      <time class="published" datetime='{{ page.date | date:"%Y-%m-%d" }}'>{% include date-month-french.html %}</time>
       <h1 class="instapaper_title">{{ page.title }}</h1>
       <div>
-      	<ul class="like-buttons">
+      	<ul class="like-buttons well">
       		<li class="like-twitter">
-				<a href="http://twitter.com/share" class="twitter-share-button" data-via="PuerkitoBio" data-lang="fr">Tweeter</a>
+				<a href="//twitter.com/share" class="twitter-share-button" data-via="PuerkitoBio" data-lang="fr">Tweeter</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</li>
 			<li class="like-gplus">
@@ -18,13 +18,13 @@ layout: master
 
 				  (function() {
 				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-				    po.src = 'https://apis.google.com/js/plusone.js';
+				    po.src = '//apis.google.com/js/plusone.js';
 				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 				  })();
 				</script>
 			</li>
 			<li class="like-facebook">
-				<iframe src="//www.facebook.com/plugins/like.php?href&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=410164925668318" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+				<fb:like href="{{ site.url }}{{ page.url }}" send="false" layout="button_count" show_faces="false" action="like" width="130px" style="display: block; float: left; margin: 0; padding: 0;"></fb:like>
 			</li>
 		</ul>
       </div>

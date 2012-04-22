@@ -5,5 +5,5 @@ pygments: false
 paginate: 6
 permalink: /:year/:month/:title.html
 title: "hypermégatop, parfois"
-url: http://hypermegatop.github.com/
+url: http://hypermegatop.github.com
 description: "Blogue technologique sur node.js, backbone et autres merveilles Javascript."

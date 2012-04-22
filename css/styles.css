@@ -39,6 +39,11 @@ li.like-gplus {
   margin-top: 9px;
   padding-right: 6px;
 }
+
+li.like-facebook {
+  margin-bottom: 12px;
+}
+
 /*
 header { 
   margin-bottom: 30px; 

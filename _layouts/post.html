@@ -33,6 +33,11 @@ layout: master
 		{{ content }}
 	</div>
 	<div class="metadata">
-		<p>Publié dans <em><a href="#">technologie</a></em></p>
+		<p>Publié dans <em>
+			{% for catg in page.categories %}
+			<a href="#">{{ catg }}</a>
+			&nbsp;
+			{% endfor %}
+		</em></p>
 	</div>
 </article>

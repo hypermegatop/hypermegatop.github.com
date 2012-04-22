@@ -8,6 +8,23 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 li { line-height: 24px }
 
+ul.like-buttons{
+  float: left;
+  list-style: none;
+  margin: 5px 0 20px 0;
+  padding: 0;
+  width: 100%;
+}
+ul.like-buttons li{
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+li.like-gplus {
+  margin-top: 9px;
+  padding-right: 6px;
+}
 /*
 header { 
   margin-bottom: 30px; 
@@ -72,7 +89,6 @@ time.published a { color: #666; text-decoration: none; }
 
 article { margin-bottom: 3em; }
 
-hr { margin: 5px;}
 /*
 article p,
 article li, 

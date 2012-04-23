@@ -1,0 +1,42 @@
+.ribbon {
+	margin-right: 20px;
+	display: inline-block;
+	color: black;
+	background-color: white;
+	width: 40px;
+	.border-bottom-left-radius(9px);
+	.border-bottom-right-radius(9px);
+	text-align: center;
+	span {
+		#font > #family > .monospace;
+		font-size: @baseFontSize * .850;
+	}
+}
+
+.ribbon-twitter {
+	background-color: #C0DEED;
+	background-image: url(/img/tw_wh.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	.transition(background-color 1s ease);
+	&:hover {
+		background-color: white;
+		background-image: url(/img/tw_bl.png);
+	}
+}
+
+.ribbon-rss{
+	background-color: orange;
+	.transition(background-color 1s ease);
+	span {
+		color: white;
+		font-weight: bold;
+	}
+	&:hover {
+		background-color: white;
+
+		span {
+			color: black;
+		}
+	}
+}

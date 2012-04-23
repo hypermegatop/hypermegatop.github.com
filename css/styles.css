@@ -6,19 +6,6 @@
 body { font: 18px/25px 'Palatino', 'Palatino Linotype', 'Georgia', serif; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-.badge-rss {
-  font-family:Menlo,Monaco,"Courier New",monospace;
-  font-size:14px;
-  background-color: orange;
-  padding-top: 40px;
-  margin-left: 10px;
-  text-decoration: none;
-}
-.badge-rss a {
-  text-decoration: none;
-  color: white;
-}
-
 li { line-height: 24px }
 
 ul.like-buttons{

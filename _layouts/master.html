@@ -20,7 +20,6 @@
 			}
 		</style>
 		<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<link href="/css/prettify.css" rel="stylesheet">
 		<link href="/css/styles.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,9 +35,9 @@
 			<div class="navbar-inner">
 				<div class="container-fluid">
 					<a class="brand" href="/" title="Accueil">{{ site.title }}</a>
-					<span class="badge badge-rss" title="Fil RSS"><a href="/feed.xml">RSS</a></span>
 					<div class="pull-right">
-						<a href="//twitter.com/PuerkitoBio" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @PuerkitoBio</a>
+						<a href="/feed.xml"><div class="ribbon ribbon-rss" title="Fil RSS"><span>RSS</span></div></a>
+						<a href="https://twitter.com/intent/user?screen_name=PuerkitoBio"><div class="ribbon ribbon-twitter" title="Suivez @PuerkitoBio sur Twitter"><span>&nbsp;</span></div></a>
 					</div>
 				</div>
 			</div>
@@ -62,9 +61,6 @@
 		{% unless paginator %}
 		{% include post-scripts.html %}
 		{% endunless %}
-
-		<!-- Twitter everywhere for the "follow" button -->
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 		<!-- Google Analytics everywhere -->
 		<script>

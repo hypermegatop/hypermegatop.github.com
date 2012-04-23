@@ -3994,6 +3994,14 @@ a.thumbnail:hover {
 .invisible {
   visibility: hidden;
 }
+/*@media (max-width: 480px) {
+	.ribbon {
+		.btn;
+		display: block;
+	}
+}
+
+@media (min-width: 481px) {*/
 .ribbon {
   margin-right: 20px;
   display: inline-block;
@@ -4023,8 +4031,7 @@ a.thumbnail:hover {
   -o-transition: background-color 1s ease;
   transition: background-color 1s ease;
 }
-.ribbon-twitter:hover,
-.ribbon-twitter:focus {
+.ribbon-twitter:hover {
   background-color: white;
   background-image: url(/img/tw_bl.png);
 }
@@ -4040,12 +4047,10 @@ a.thumbnail:hover {
   color: white;
   font-weight: bold;
 }
-.ribbon-rss:hover,
-.ribbon-rss:focus {
+.ribbon-rss:hover {
   background-color: white;
 }
-.ribbon-rss:hover span,
-.ribbon-rss:focus span {
+.ribbon-rss:hover span {
   color: black;
 }
 .com {

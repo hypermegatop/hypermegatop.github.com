@@ -69,6 +69,12 @@
 
 @media (max-width: 480px) {
 
+  //MAN : Reconduire ici ce qu'il faisait à 767px
+  .navbar-fixed-top {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
@@ -141,10 +147,13 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  /*
+  //MAN : Pas besoin pour ma navbar
   .navbar-fixed-top {
     margin-left: -20px;
     margin-right: -20px;
   }
+  */
 
   // GRID & CONTAINERS
   // -----------------
@@ -212,9 +221,11 @@
 
 
 
+// MAN: Switch to mobile navbar ONLY on phones (@media (max-width: 480px));
 // TABLETS AND BELOW
 // -----------------
-@media (max-width: 979px) {
+//@media (max-width: 979px) {
+@media (max-width: 480px) {
 
   // UNFIX THE TOPBAR
   // ----------------
@@ -343,8 +354,6 @@
     overflow: visible !important;
   }
 }
-
-
 
 // LARGE DESKTOP & UP
 // ------------------

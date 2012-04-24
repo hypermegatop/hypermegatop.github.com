@@ -4036,7 +4036,7 @@ a.thumbnail:hover {
   background-image: url(/img/tw_bl.png);
 }
 .ribbon-rss {
-  background-color: orange;
+  background-color: #f89406;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
   -ms-transition: background-color 1s ease;
@@ -4090,15 +4090,6 @@ ul.like-buttons li.like-facebook span {
 .share-initial.share-tease {
   opacity: 0.3;
 }
-h1 {
-  cursor: pointer;
-}
-h1 .icon-share {
-  vertical-align: middle;
-}
-h1.unclikable {
-  cursor: default;
-}
 #post-list {
   list-style: none;
 }
@@ -4120,6 +4111,44 @@ h1.unclikable {
 }
 #post-list li h2 .pictogram {
   color: #CCC;
+}
+.entry-content ul {
+  list-style: disc outside;
+  margin-left: 2em;
+}
+.entry-content blockquote {
+  color: #999999;
+  padding: 0 12px;
+  margin: 20px 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+article h1 {
+  cursor: pointer;
+}
+article h1 span {
+  border-bottom: 1px dashed #333333;
+}
+article h1 .icon-share {
+  vertical-align: middle;
+}
+article h1.unclikable {
+  cursor: default;
+}
+article h1.unclikable span {
+  border-bottom-style: none;
+}
+article h1.unclikable i {
+  display: none;
+}
+/*
+article blockquote { color: #777; font-size: 14px; line-height: 19px; padding: 0 12px; margin: 20px 8px; }
+article blockquote p { color: #777; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; }
+*/footer {
+  border-top: 5px solid #f89406;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333333;
+  color: #ffffff;
 }
 .com {
   color: #93a1a1;

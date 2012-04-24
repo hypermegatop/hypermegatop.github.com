@@ -4,8 +4,10 @@ layout: master
 <article class="hentry">
 	<header class="entry-header">
       <time class="published" datetime='{{ page.date | date:"%Y-%m-%d" }}'>{% include date-month-french.html %}</time>
-      <h1 class="instapaper_title">{{ page.title }}</h1>
-      <div>
+      <h1 class="instapaper_title">{{ page.title }}
+      	<i class="icon-share" title="Partager"></i>
+      </h1>
+      <div class="share-initial">
       	<ul class="like-buttons well">
       		<li class="like-twitter">
 				<a href="//twitter.com/share" class="twitter-share-button" data-via="PuerkitoBio" data-lang="fr">Tweeter</a>

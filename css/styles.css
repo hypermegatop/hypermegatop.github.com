@@ -2,11 +2,12 @@
  * Mostly as-is from Calepin.co, now open source
  * https://github.com/jokull/calepin
 ================================================== */
-
+/*
 body { font: 18px/25px 'Palatino', 'Palatino Linotype', 'Georgia', serif; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 li { line-height: 24px }
+*/
 
 ul.like-buttons{
   float: left;
@@ -62,7 +63,7 @@ h2.section {
 */
 
 iframe, object { margin-top: 0.5em; }
-
+/*
 footer { 
   padding: 10px;
   font-size: 14px;
@@ -90,7 +91,7 @@ time.published a { color: #666; text-decoration: none; }
 #post-list p.abstract { font-size: 11pt; }
 
 article { margin-bottom: 3em; }
-
+*/
 /*
 article p,
 article li, 
@@ -104,6 +105,7 @@ article h6,
 article hr, 
 article table { max-width: 560px; }
 */
+/*
 article ul { list-style: disc outside; margin-left: 2em; }
 article blockquote { color: #777; font-size: 14px; line-height: 19px; padding: 0 12px; margin: 20px 8px; }
 article blockquote p { color: #777; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; }
@@ -133,9 +135,9 @@ sup { vertical-align: .2em; font-size: 80%; margin: -2px 0 0 2px; }
 
 p img { max-width: 100%; }
 small { font-size: 80%; }
-
+*/
 /* .container, .container .sixteen.columns { width: 480px; } */
-
+/*
 .MathJax_Display * { color: #222 !important; }
 
 @media only screen and (max-width: 767px) {
@@ -164,4 +166,4 @@ small { font-size: 80%; }
   article h6,
   article hr, 
   article table { max-width: none; }*/
-}
+/*}*/

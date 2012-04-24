@@ -1,0 +1,44 @@
+// Pour positionner les iFrames de twitter et facebook
+iframe, object {
+	margin-top: 0.5em;
+}
+
+ul.like-buttons {
+  float: left;
+  list-style: none;
+  margin: 2px 0 2px 0;
+  padding: 0;
+  padding-left: 5px;
+  width: 100%;
+  li {
+    float: left;
+    margin-right: 10px;
+    &.like-gplus {
+	  padding-top: 7px;
+    }
+    &.like-facebook span {
+	  padding-bottom: 10px;
+    }
+  }
+}
+
+.share-initial {
+	opacity: 0;
+	margin: 0px;
+	.transition(opacity 1s ease);
+	&.share-final {
+		opacity: 1;
+	}
+	&.share-tease {
+		opacity: 0.3;
+	}
+}
+h1 {
+	cursor: pointer;
+	.icon-share {
+		vertical-align: middle;
+	}
+	&.unclikable {
+		cursor: default;
+	}
+}

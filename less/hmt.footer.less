@@ -1,7 +1,20 @@
 footer {
-	border-top: 5px solid @orange;
+	font-size: @baseFontSize - 2;
+	border-top: 5px solid @grayLighter;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: @grayDark;
 	color: @white;
+
+	h1, h2, h3, h4, h5, h6 {
+		padding-left: 25px;
+	}
+	a {
+		color: @white;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: underline;
+			color: @white;
+		}
+	}
 }

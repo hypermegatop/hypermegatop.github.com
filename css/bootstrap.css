@@ -4037,21 +4037,27 @@ a.thumbnail:hover {
 }
 .ribbon-rss {
   background-color: #f89406;
+  background-image: url(/img/r_wh.png);
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
   -ms-transition: background-color 1s ease;
   -o-transition: background-color 1s ease;
   transition: background-color 1s ease;
-}
-.ribbon-rss span {
-  color: white;
-  font-weight: bold;
+  /*	span {
+		color: white;
+		font-weight: bold;
+	}*/
+
 }
 .ribbon-rss:hover {
   background-color: white;
-}
-.ribbon-rss:hover span {
-  color: black;
+  background-image: url(/img/r_bl.png);
+  /*span {
+			color: black;
+		}*/
+
 }
 ul.like-buttons {
   float: left;

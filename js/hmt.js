@@ -8,8 +8,8 @@ jQuery(function($) {
 
 	// Animate immediately to hide the share bar
 	$share.animate({
-		opacity: 'toggle',
-		height: 'toggle'
+		opacity: 'hide',
+		height: 'hide'
 	}, 0);
 
 	// Prepare the transitions for the share buttons

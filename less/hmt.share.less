@@ -2,8 +2,7 @@ ul.like-buttons {
   float: left;
   list-style: none;
   margin: 2px 0 2px 0;
-  padding: 0;
-  padding-left: 5px;
+  padding: 0 0 3px 5px; // top-right-bottom-left
   width: 100%;
   li {
     float: left;
@@ -13,25 +12,34 @@ ul.like-buttons {
 
     &.like-twitter {
       // Twitter's iFrame is 20px high
-      margin-top: 7px;
+      //margin-top: 7px;
+      iframe {
+        vertical-align: middle;
+      }
     }
     &.like-gplus {
       // Google Plus' iFrame is 20px high with no padding nor margin
 
       // Google Plus resets the margins to 0px, so set the 7px on the li.like-gplus
-      margin-top: 7px;
+      //margin-top: 7px;
+      div[style] {
+        vertical-align: middle !important;
+      }
     }
     &.like-facebook span {
       // Facebook's iFrame is 21px high, so set the margin 1px less
-      margin-top: 6px;
+      //margin-top: 8px;
+      vertical-align: middle;
     }
     &.like-flattr {
-      // Flattr itself is 22px high, so set the margin 2px less
-
-      // Since flattr is not an iFrame, manually add the 7px to the top
-      margin-top: 5px;
-      // Add the 5px missing from the bottom, to get to 32px
-      margin-bottom: 5px;
+      // Flattr itself is 22px high, so set the margin 1px less on top to center it
+      a img {
+        vertical-align: middle;
+      }
+      // Since flattr is not an iFrame, manually add the px to the top
+      /*margin-top: 4px;
+      // Add the px missing from the bottom, to get to 32px
+      margin-bottom: 6px;*/
       // Add a bigger margin-right, since it doesn't have space for click count
       margin-right: 35px;
     }

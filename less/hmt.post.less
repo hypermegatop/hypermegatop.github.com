@@ -1,33 +1,41 @@
 .entry-content {
-	ul {
-		list-style: disc outside;
-		margin-left: 2em;
-	}
-	blockquote {
-		color: @grayLight;
-		//font-size: 14px;
-		//line-height: 19px;
-		padding: 0 12px;
-		margin: 20px 8px;
-		font-family: @altFontFamily;
-	}
+  ul {
+    list-style: disc outside;
+    margin-left: 2em;
+  }
+  blockquote {
+    color: @grayLight;
+    //font-size: 14px;
+    //line-height: 19px;
+    padding: 0 12px;
+    margin: 20px 8px;
+    font-family: @altFontFamily;
+  }
 }
 
 article h1 {
-	cursor: pointer;
-	span {
-		border-bottom: 1px dashed @grayDark;
-	}
-	.icon-share {
-		vertical-align: middle;
-	}
-	&.unclikable {
-		cursor: default;
-		span {
-			border-bottom-style: none;
-		}
-		i {
-			display: none;
-		}
-	}
+  margin-bottom: 10px;
+  cursor: pointer;
+  span {
+    border-bottom: 1px dashed @grayDark;
+  }
+  .icon-share {
+    vertical-align: middle;
+  }
+  &.unclikable {
+    cursor: default;
+    span {
+      border-bottom-style: none;
+    }
+    i {
+      display: none;
+    }
+  }
+}
+
+.metadata {
+  p {
+    font-size: 11px;
+    color: @grayLight;
+  }
 }

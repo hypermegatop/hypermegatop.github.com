@@ -4053,10 +4053,6 @@ a.thumbnail:hover {
 .ribbon-rss:hover span {
   color: black;
 }
-iframe,
-object {
-  margin-top: 0.5em;
-}
 ul.like-buttons {
   float: left;
   list-style: none;
@@ -4069,26 +4065,26 @@ ul.like-buttons li {
   float: left;
   margin-right: 10px;
 }
+ul.like-buttons li.like-twitter {
+  margin-top: 7px;
+}
 ul.like-buttons li.like-gplus {
-  padding-top: 7px;
+  margin-top: 7px;
 }
 ul.like-buttons li.like-facebook span {
-  padding-bottom: 10px;
+  margin-top: 6px;
+}
+ul.like-buttons li.like-flattr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 35px;
 }
 .share-initial {
-  opacity: 0;
   margin: 0px;
-  -webkit-transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -ms-transition: opacity 1s ease;
-  -o-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  opacity: 0.3;
 }
 .share-initial.share-final {
   opacity: 1;
-}
-.share-initial.share-tease {
-  opacity: 0.3;
 }
 #post-list {
   list-style: none;

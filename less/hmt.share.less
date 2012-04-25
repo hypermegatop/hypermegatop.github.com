@@ -1,8 +1,3 @@
-// Pour positionner les iFrames de twitter et facebook
-iframe, object {
-	margin-top: 0.5em;
-}
-
 ul.like-buttons {
   float: left;
   list-style: none;
@@ -13,23 +8,40 @@ ul.like-buttons {
   li {
     float: left;
     margin-right: 10px;
+
+    // Like buttons make the li 32px high (counting margins and all)
+
+    &.like-twitter {
+      // Twitter's iFrame is 20px high
+      margin-top: 7px;
+    }
     &.like-gplus {
-	  padding-top: 7px;
+      // Google Plus' iFrame is 20px high with no padding nor margin
+
+      // Google Plus resets the margins to 0px, so set the 7px on the li.like-gplus
+      margin-top: 7px;
     }
     &.like-facebook span {
-	  padding-bottom: 10px;
+      // Facebook's iFrame is 21px high, so set the margin 1px less
+      margin-top: 6px;
+    }
+    &.like-flattr {
+      // Flattr itself is 22px high, so set the margin 2px less
+
+      // Since flattr is not an iFrame, manually add the 7px to the top
+      margin-top: 5px;
+      // Add the 5px missing from the bottom, to get to 32px
+      margin-bottom: 5px;
+      // Add a bigger margin-right, since it doesn't have space for click count
+      margin-right: 35px;
     }
   }
 }
 
 .share-initial {
-	opacity: 0;
 	margin: 0px;
-	.transition(opacity 1s ease);
-	&.share-final {
-		opacity: 1;
-	}
-	&.share-tease {
-		opacity: 0.3;
-	}
+  opacity: 0.3;
+  &.share-final {
+    opacity: 1;
+  }
 }

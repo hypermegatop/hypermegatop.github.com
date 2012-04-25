@@ -4,10 +4,15 @@ layout: master
 <article class="hentry">
 	<header class="entry-header">
       <time class="published" datetime='{{ page.date | date:"%Y-%m-%d" }}'>{% include date-month-french.html %}</time>
-      <h1 class="instapaper_title"><span>{{ page.title }}</span>&nbsp;<i class="icon-share" title="Partager"></i>
+      <h1 class="instapaper_title"><span>{{ page.title }}</span>&nbsp;<a href="#"><i class="icon-share" title="Partager"></i></a>
       </h1>
       <div class="share-initial">
       	<ul class="like-buttons well">
+			<li class="like-flattr">
+				<a href="https://flattr.com/submit/auto?user_id=PuerkitoBio&url={{ site.url }}{{ page.url }}&title={{ page.title | escape }}&language=fr_FR">
+					<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Partager avec Flattr"></img>
+				</a>
+			</li>
       		<li class="like-twitter">
 				<a href="//twitter.com/share" class="twitter-share-button" data-via="PuerkitoBio" data-lang="fr">Tweeter</a>
 			</li>

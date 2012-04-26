@@ -544,7 +544,7 @@ pre {
   display: block;
   padding: 12.5px;
   margin: 0 0 13px;
-  font-size: 14.8px;
+  font-size: 13.2px;
   line-height: 26px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
@@ -3994,31 +3994,43 @@ a.thumbnail:hover {
 .invisible {
   visibility: hidden;
 }
-/*@media (max-width: 480px) {
-	.ribbon {
-		.btn;
-		display: block;
-	}
+@media (max-width: 480px) {
+  .ribbon {
+    *zoom: 1;
+    display: block;
+    width: 100px;
+    height: 40px;
+    float: right;
+    border: 1px solid #ffffff;
+  }
+  .ribbon:before,
+  .ribbon:after {
+    display: table;
+    content: "";
+  }
+  .ribbon:after {
+    clear: both;
+  }
 }
-
-@media (min-width: 481px) {*/
-.ribbon {
-  margin-right: 20px;
-  display: inline-block;
-  color: black;
-  background-color: white;
-  width: 40px;
-  -webkit-border-bottom-left-radius: 9px;
-  -moz-border-bottom-left-radius: 9px;
-  border-bottom-left-radius: 9px;
-  -webkit-border-bottom-right-radius: 9px;
-  -moz-border-bottom-right-radius: 9px;
-  border-bottom-right-radius: 9px;
-  text-align: center;
-}
-.ribbon span {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 13.6px;
+@media (min-width: 481px) {
+  .ribbon {
+    margin-right: 20px;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    width: 40px;
+    -webkit-border-bottom-left-radius: 9px;
+    -moz-border-bottom-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    -webkit-border-bottom-right-radius: 9px;
+    -moz-border-bottom-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    text-align: center;
+  }
+  .ribbon span {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: 13.6px;
+  }
 }
 .ribbon-twitter {
   background-color: #C0DEED;
@@ -4045,19 +4057,10 @@ a.thumbnail:hover {
   -ms-transition: background-color 1s ease;
   -o-transition: background-color 1s ease;
   transition: background-color 1s ease;
-  /*	span {
-		color: white;
-		font-weight: bold;
-	}*/
-
 }
 .ribbon-rss:hover {
   background-color: white;
   background-image: url(/img/r_bl.png);
-  /*span {
-			color: black;
-		}*/
-
 }
 .brand {
   text-shadow: 0px 0px 10px #ffffff;
@@ -4070,6 +4073,30 @@ a.thumbnail:hover {
 .brand:hover {
   text-shadow: 0 0 0px #ffffff;
 }
+@media (max-width: 480px) {
+  .like-twitter {
+    margin-right: 23px;
+  }
+  .like-gplus {
+    margin-right: 50px;
+  }
+  .like-facebook {
+    margin-right: 10px;
+  }
+  .like-flattr {
+    margin-right: 47px;
+  }
+}
+@media (min-width: 481px) {
+  .like-twitter,
+  .like-gplus,
+  .like-facebook {
+    margin-right: 0;
+  }
+  .like-flattr {
+    margin-right: 20px;
+  }
+}
 ul.like-buttons {
   float: left;
   list-style: none;
@@ -4079,7 +4106,6 @@ ul.like-buttons {
 }
 ul.like-buttons li {
   float: left;
-  margin-right: 10px;
 }
 ul.like-buttons li.like-twitter iframe {
   vertical-align: middle;
@@ -4089,13 +4115,6 @@ ul.like-buttons li.like-gplus div[style] {
 }
 ul.like-buttons li.like-facebook span {
   vertical-align: middle;
-}
-ul.like-buttons li.like-flattr {
-  /*margin-top: 4px;
-      // Add the px missing from the bottom, to get to 32px
-      margin-bottom: 6px;*/
-
-  margin-right: 35px;
 }
 ul.like-buttons li.like-flattr a img {
   vertical-align: middle;

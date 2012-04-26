@@ -1,3 +1,30 @@
+@shareButtonTotalWidth: 140px;
+
+@media (max-width: 480px) {
+  .like-twitter {
+    margin-right: @shareButtonTotalWidth - 117px;
+  }
+  .like-gplus {
+    margin-right: @shareButtonTotalWidth - 90px;
+  }
+  .like-facebook {
+    margin-right: @shareButtonTotalWidth - 130px;
+  }
+  .like-flattr {
+    margin-right: @shareButtonTotalWidth - 93px;
+  }
+}
+@media (min-width: 481px) {
+  // Twitter, GPlus and Facebook's iFrames all have generous space to their right,
+  // shouldn't be a problem unless I get a gazillion likes
+  .like-twitter, .like-gplus, .like-facebook {
+    margin-right: 0;
+  }
+  .like-flattr {
+    margin-right: 20px;
+  }
+}
+
 ul.like-buttons {
   float: left;
   list-style: none;
@@ -6,42 +33,36 @@ ul.like-buttons {
   width: 100%;
   li {
     float: left;
-    margin-right: 10px;
 
-    // Like buttons make the li 32px high (counting margins and all)
+    // Set the right margin of each like button so that they all take 140px (wider's width+10px)
 
     &.like-twitter {
       // Twitter's iFrame is 20px high
-      //margin-top: 7px;
+      // Its width is 117px
       iframe {
         vertical-align: middle;
       }
     }
     &.like-gplus {
       // Google Plus' iFrame is 20px high with no padding nor margin
+      // Its width is 90px
 
-      // Google Plus resets the margins to 0px, so set the 7px on the li.like-gplus
-      //margin-top: 7px;
+      // Google Plus resets the margins to 0px
       div[style] {
         vertical-align: middle !important;
       }
     }
     &.like-facebook span {
-      // Facebook's iFrame is 21px high, so set the margin 1px less
-      //margin-top: 8px;
+      // Facebook's iFrame is 21px high
+      // Its width is 130px
       vertical-align: middle;
     }
     &.like-flattr {
-      // Flattr itself is 22px high, so set the margin 1px less on top to center it
+      // Flattr itself is 22px high
+      // Its width is 93px
       a img {
         vertical-align: middle;
       }
-      // Since flattr is not an iFrame, manually add the px to the top
-      /*margin-top: 4px;
-      // Add the px missing from the bottom, to get to 32px
-      margin-bottom: 6px;*/
-      // Add a bigger margin-right, since it doesn't have space for click count
-      margin-right: 35px;
     }
   }
 }

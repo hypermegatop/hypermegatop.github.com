@@ -1,12 +1,16 @@
 // Ici, la NavBar est unfixée, transformer les ribbons en "boutons"
-/*@media (max-width: 480px) {
+@media (max-width: 480px) {
 	.ribbon {
-		.btn;
+		.clearfix;
 		display: block;
+		width: 100px;
+		height: 40px;
+		float: right;
+		border: 1px solid @white;
 	}
 }
 
-@media (min-width: 481px) {*/
+@media (min-width: 481px) {
 	.ribbon {
 		margin-right: 20px;
 		display: inline-block;
@@ -21,7 +25,7 @@
 			font-size: @baseFontSize * .850;
 		}
 	}
-//}
+}
 
 .ribbon-twitter {
 	background-color: #C0DEED;
@@ -41,17 +45,10 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	.transition(background-color 1s ease);
-/*	span {
-		color: white;
-		font-weight: bold;
-	}*/
+
 	&:hover {
 		background-color: white;
 		background-image: url(/img/r_bl.png);
-
-		/*span {
-			color: black;
-		}*/
 	}
 }
 

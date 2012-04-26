@@ -11,7 +11,6 @@ author: Martin Angers
 				<h2>
 					<a href="{{ post.url }}">
 						{{ post.title }}
-						<span class="pictogram"> ➝</span>
 					</a>
 				</h2>
 				<p class="abstract">{{ post.abstract }}</p>
@@ -23,7 +22,7 @@ author: Martin Angers
 		<ul class="pager">
 			{% if paginator.next_page %}
 			<li class="previous">
-				<a href="/page{{ paginator.next_page }}">&larr; anciens</a>
+				<a href="/page{{ paginator.next_page }}">&larr; + anciens</a>
 			</li>
 			{% endif %}
 			{% if paginator.previous_page %}
@@ -31,7 +30,7 @@ author: Martin Angers
 				{% if paginator.previous_page == 1 %}
 				<a href="/">récents &rarr;</a>
 				{% elsif paginator.previous_page %}
-				<a href="/page{{ paginator.previous_page }}">récents &rarr;</a>
+				<a href="/page{{ paginator.previous_page }}">+ récents &rarr;</a>
 				{% endif %}
 			</li>
 			{% endif %}

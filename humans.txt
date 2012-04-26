@@ -8,3 +8,4 @@ Location: Québec, Canada
 Standards: HTML5, CSS3
 Components: HTML5Shi[m|v], jQuery, Twitter Bootstrap, Prettify Code, Google Analytics, Twitter, Facebook, Google+ button scripts.
 Software: Jekyll, Calepin (typography inspiration), LESS, GitHub, git, Sublime Text 2, Ubuntu.
+

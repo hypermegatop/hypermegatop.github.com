@@ -26,8 +26,16 @@ jQuery(function($) {
 	$h1.hover(function() {
 		if (!$share.hasClass("share-final")) {
 			$share.animate({
-				opacity: 'toggle',
-				height: 'toggle'
+				opacity: 'show',
+				height: 'show'
+			}, 'fast');
+		}
+	},
+	function() {
+		if (!$share.hasClass("share-final")) {
+			$share.animate({
+				opacity: 'hide',
+				height: 'hide'
 			}, 'fast');
 		}
 	});

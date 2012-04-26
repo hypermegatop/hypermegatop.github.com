@@ -1,0 +1,10 @@
+/* TEAM */
+One-Man Team: Martin Angers
+Site: http://hypermegatop.github.com
+Twitter: @PuerkitoBio
+Location: Québec, Canada
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: HTML5Shi[m|v], jQuery, Twitter Bootstrap, Prettify Code, Google Analytics, Twitter, Facebook, Google+ button scripts.
+Software: Jekyll, Calepin (typography inspiration), LESS, GitHub, git, Sublime Text 2, Ubuntu.

@@ -57,4 +57,4 @@ C'est ce qu'il manque, à mon avis, aux solutions actuelles sous Javascript. Que
 [proto]: http://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_prototype
 [eb]: https://github.com/PuerkitoBio/express-boilerplate
 [spring]: http://www.springsource.org/
-[struct]: http://hypermegatop.calepin.co/structurer-une-application-web-avec-express-et-nodejs.html
+[struct]: http://hypermegatop.github.com/2012/03/structurer-une-application-web-avec-express-et-nodejs.html

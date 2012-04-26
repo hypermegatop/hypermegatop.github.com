@@ -31,10 +31,10 @@ Le monsieur en question est le co-fondateur de GitHub. Les morceaux tombaient en
 
 Comme c'est souvent le cas avec GitHub, créer son blogue est d'une simplicité remarquable. Il s'agit de créer un référentiel (*repository*) portant le nom "*pseudo-github*.github.com", et le contenu sera disponible à l'adresse http://*pseudo-github*.github.com/. Ça fonctionne aussi pour les organisations, et comme je voulais garder le nom hypermégatop (alors que mon pseudo GitHub est [PuerkitoBio][]) je me suis créé une organisation de ce nom et j'ai commencé à mettre en place mon blogue. N'allez [surtout pas le voir maintenant][hmt], il n'est pas prêt et bougera régulièrement d'ici à ce que je déménage formellement.
 
-Quant au *design* du site, il sera peut-être minimaliste comme l'était Calepin. Ou peut-être pas. Maintenant que je peux faire ce que je veux, je risque d'expérimenter certains trucs, particulièrement avec le CSS. Et puis je n'ai pas la notoriété d'un [Dustin Curtis][dcurt], possiblement que plus de tentacules sociales me seraient utiles. Tout ça reste à voir, mais en attendant le signal, c'est encore ici, sur [hypermegatop.calepin.co][hmtold], que ça se passe. 86... 85... 84 jours...
+Quant au *design* du site, il sera peut-être minimaliste comme l'était Calepin. Ou peut-être pas. Maintenant que je peux faire ce que je veux, je risque d'expérimenter certains trucs, particulièrement avec le CSS. Et puis je n'ai pas la notoriété d'un [Dustin Curtis][dcurt], possiblement que plus de tentacules sociales me seraient utiles. Tout ça reste à voir, mais en attendant le signal, c'est encore ici, sur hypermegatop.calepin.co [**mise à jour**: lien enlevé, blogue déplacé sur [hypermegatop.github.com][hmt]], que ça se passe. 86... 85... 84 jours...
 
 [tw1]: https://twitter.com/#!/calepinapp/status/192335906479415296
-[kod]: http://hypermegatop.calepin.co/meta-billet-un-mot-sur-le-calepin.html
+[kod]: http://hypermegatop.github.com/2012/02/meta-billet-un-mot-sur-le-calepin.html
 [ghcalepin]: https://github.com/jokull/calepin
 [scriptogram]: http://scriptogr.am
 [git]: http://git-scm.com/
@@ -42,5 +42,4 @@ Quant au *design* du site, il sera peut-être minimaliste comme l'était Calepin
 [jekyll]: https://github.com/mojombo/jekyll
 [hmt]: http://hypermegatop.github.com/
 [puerkitobio]: https://github.com/PuerkitoBio
-[hmtold]: http://hypermegatop.calepin.co/
 [dcurt]: http://dcurt.is/

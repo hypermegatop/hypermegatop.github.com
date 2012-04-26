@@ -20,7 +20,7 @@ Je ne reprendrai pas ici [le contenu du *readme* sur GitHub][readme], je vous su
 
 Les prochaines étapes sont assez simples, je vous invite à essayer la librairie, si vous croyez qu'elle peut être utile dans vos projets. N'hésitez pas à la faire partager avec vos collègues développeurs, et à [ouvrir un rapport d'anomalie][issue] au besoin. Encore mieux, si vous le pouvez, soumettez un correctif (un *pull request*). Je prévois ajouter la documentation de l'API avec [JSDoc][] sous peu, et possiblement rendre la librairie disponible dans le fureteur.
 
-[deps]: http://hypermegatop.calepin.co/experimentations-sur-linjection-de-dependance-avec-nodejs.html
+[deps]: http://hypermegatop.github.com/2012/03/experimentations-sur-injection-de-dependance-avec-nodejs.html
 [impl]: https://github.com/PuerkitoBio/implement.js
 [issue]: https://github.com/PuerkitoBio/implement.js/issues
 [jsdoc]: http://en.wikipedia.org/wiki/JSDoc

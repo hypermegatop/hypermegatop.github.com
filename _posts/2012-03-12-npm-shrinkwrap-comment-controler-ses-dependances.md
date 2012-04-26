@@ -110,7 +110,7 @@ Un mot en terminant sur le [registre][], je mentionnais dans mon [dernier articl
 [nmingit]: http://www.mikealrogers.com/posts/nodemodules-in-git.html
 [bindeps]: http://blog.nodejs.org/2012/02/27/managing-node-js-dependencies-with-shrinkwrap/
 [crw]: http://www.compterenduweb.com/
-[moi]: http://hypermegatop.calepin.co/npm-la-base-essentielle-pour-debuter-avec-nodejs.html
+[moi]: http://hypermegatop.github.com/2012/03/npm-la-base-essentielle-pour-debuter-avec-nodejs.html
 [gist]: https://gist.github.com/2001456
 [pacheco]: http://blog.nodejs.org/author/davepacheco/
 [registre]: http://search.npmjs.org/

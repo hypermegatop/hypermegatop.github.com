@@ -90,7 +90,7 @@ Pour profiter des fonctionnalités non anonymes, il faut bien sûr se créer un 
 Dans un prochain article j'aborderai les commandes davantage liées à une librairie spécifique, son fichier `package.json`, et les bonnes pratiques (toujours en évolution!) pour la gestion des dépendances d'une application node.
 
 [userland]: https://github.com/joyent/node/wiki/node-core-vs-userland
-[billetnode]: http://hypermegatop.calepin.co/propulse-par-nodejs.html
+[billetnode]: http://hypermegatop.github.com/2012/02/propulse-par-nodejs.html
 [npm]: http://npmjs.org/
 [installnode]: https://github.com/joyent/node/wiki/Installation
 [nvm]: https://github.com/creationix/nvm

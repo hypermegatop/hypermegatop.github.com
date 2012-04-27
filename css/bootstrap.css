@@ -4145,6 +4145,9 @@ ul.like-buttons li.like-flattr a img {
 #post-list li h2 a:hover {
   text-decoration: underline;
 }
+h1.categorie {
+  margin-left: 25px;
+}
 .entry-content ul {
   list-style: disc outside;
   margin-left: 2em;

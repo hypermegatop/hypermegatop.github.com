@@ -9,7 +9,7 @@ layout: master
       <div class="share-initial">
       	<ul class="like-buttons well">
 			<li class="like-flattr">
-				<a href="https://flattr.com/submit/auto?user_id=PuerkitoBio&url={{ site.url }}{{ page.url }}&title={{ page.title | escape }}&language=fr_FR">
+				<a href="https://flattr.com/submit/auto?user_id=PuerkitoBio&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}&language=fr_FR">
 					<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Partager avec Flattr"></img>
 				</a>
 			</li>
@@ -31,7 +31,7 @@ layout: master
 	<div class="metadata">
 		<p>Publié dans <em>
 			{% for catg in page.categories %}
-			<a href="#">{{ catg }}</a>
+			<a href="/categories/{{ catg }}">{{ catg }}</a>
 			&nbsp;
 			{% endfor %}
 		</em></p>

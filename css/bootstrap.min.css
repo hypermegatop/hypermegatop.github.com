@@ -696,6 +696,7 @@ ul.like-buttons li.like-facebook span{vertical-align:middle;}
 ul.like-buttons li.like-flattr a img{vertical-align:middle;}
 .share-initial{margin:0px;opacity:0.3;}.share-initial.share-final{opacity:1;}
 #post-list{list-style:none;}#post-list li{margin-bottom:40px;}#post-list li h2{font-size:17pt;line-height:29px;font-weight:normal;margin:0;}#post-list li h2 a{text-decoration:none;color:black;}#post-list li h2 a:hover{text-decoration:underline;}
+h1.categorie{margin-left:25px;}
 .entry-content ul{list-style:disc outside;margin-left:2em;}
 .entry-content blockquote{color:#999999;padding:0 12px;margin:20px 8px;font-family:Georgia,"Times New Roman",Times,serif;}
 article h1{margin-bottom:10px;cursor:pointer;}article h1 span{border-bottom:1px dashed #333333;}

@@ -2,20 +2,37 @@
 @media (max-width: 480px) {
 	.ribbon {
 		.clearfix;
+		.border-radius();
+		background-position: left center;
+		color: @white;
 		display: block;
-		width: 100px;
 		height: 40px;
-		float: right;
-		border: 1px solid @white;
+		font-family: @altFontFamily;
+		font-size: @baseFontSize - 2;
+		margin-bottom: 2px;
+		padding-top: 10px;
+		text-align: center;
+		text-decoration: none;
+		width: 100%;
+		&:hover span {
+			color: @black;
+		}
+	}
+	.ribbon-rss {
+		background-position: 5px center;
+	}
+	.nav-collapse.pull-right {
+		float: none;
 	}
 }
 
 @media (min-width: 481px) {
 	.ribbon {
-		margin-right: 20px;
+		margin-right: 10px;
 		display: inline-block;
 		color: black;
 		background-color: white;
+		background-position: center center;
 		width: 40px;
 		.border-bottom-left-radius(9px);
 		.border-bottom-right-radius(9px);
@@ -31,7 +48,6 @@
 	background-color: #C0DEED;
 	background-image: url(/img/tw_wh.png);
 	background-repeat: no-repeat;
-	background-position: center center;
 	.transition(background-color 1s ease);
 	&:hover {
 		background-color: white;
@@ -43,7 +59,6 @@
 	background-color: @orange;
 	background-image: url(/img/r_wh.png);
 	background-repeat: no-repeat;
-	background-position: center center;
 	.transition(background-color 1s ease);
 
 	&:hover {
@@ -51,4 +66,3 @@
 		background-image: url(/img/r_bl.png);
 	}
 }
-

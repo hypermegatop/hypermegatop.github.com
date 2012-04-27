@@ -1,3 +1,25 @@
+// Variables override
+// ** must be done manually in variables.less **
+// @grayText:                             #444;
+// @textColor:             @grayText;
+// @linkColor:             #1e347b;
+// @baseFontSize:          16px;
+// @baseFontFamily:        Palatino, "Palatino Linotype", Georgia, serif;
+// @baseLineHeight:        26px;
+// @navbarBackground:                @grayDark;
+// @navbarBackgroundHighlight:       @gray;
+
+// Bootstrap minimum import:
+// Modify bootstrap.less to import only required components.
+
+// First and foremost, import bootstrap main file
+@import "bootstrap.less";
+
+// Followed by the hmt overrides of bootstrap styles
+@import "hmt.code.override.less";
+@import "hmt.pager.override.less";
+
+// Then import the hmt-specific classes
 @import "hmt.mixins.less";
 @import "hmt.ribbons.less";
 @import "hmt.nav.less";
@@ -6,3 +28,13 @@
 @import "hmt.post.less";
 @import "hmt.footer.less";
 @import "hmt.prettify.less";
+
+// Then set the body padding for the nav-bar
+body {
+	padding-top: 60px;
+}
+
+// Finally import bootstrap's responsive styles
+@import "responsive.less";
+// ...and htm-specific overrides of the responsive design
+@import "hmt.responsive.override.less";

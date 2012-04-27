@@ -87,10 +87,6 @@
   }
 }
 @media (max-width: 480px) {
-  .navbar-fixed-top {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }

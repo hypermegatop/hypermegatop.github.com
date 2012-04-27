@@ -1,6 +1,16 @@
+// Visibility utilities
+
+// For everything else
+.visible-small-phone     { display: none; }
+.hidden-small-phone      { display: block; }
+
 // UP TO LANDSCAPE PHONE
 // ---------------------
 @media (max-width: 480px) {
+  // Show
+  .visible-small-phone     { display: block; }
+  // Hide
+  .hidden-small-phone      { display: none; }
 
   //MAN : Reconduire ici ce qu'il faisait à 767px
   .navbar-fixed-top {
@@ -8,6 +18,7 @@
     margin-right: -20px;
   }
 }
+
 
 // DANS RESPONSIVE.LESS, mettre en commentaire, dans:
 // @media (max-width: 767px) {

@@ -1844,11 +1844,23 @@ pre {
   .ribbon {
     *zoom: 1;
     *zoom: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-position: left center;
+    color: #ffffff;
     display: block;
-    width: 100px;
     height: 40px;
-    float: right;
-    border: 1px solid #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    margin-bottom: 2px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
   }
   .ribbon:before,
   .ribbon:after {
@@ -1865,14 +1877,26 @@ pre {
   }
   .ribbon:after {
     clear: both;
+  }
+  .ribbon:hover span {
+    color: #000000;
+  }
+  .ribbon-rss {
+    background-position: 5px center;
+  }
+  .nav-collapse.pull-right {
+    float: none;
   }
 }
 @media (min-width: 481px) {
   .ribbon {
-    margin-right: 20px;
+    *zoom: 1;
+    *zoom: 1;
+    margin-right: 10px;
     display: inline-block;
     color: black;
     background-color: white;
+    background-position: center center;
     width: 40px;
     -webkit-border-bottom-left-radius: 9px;
     -moz-border-bottom-left-radius: 9px;
@@ -1881,6 +1905,22 @@ pre {
     -moz-border-bottom-right-radius: 9px;
     border-bottom-right-radius: 9px;
     text-align: center;
+  }
+  .ribbon:before,
+  .ribbon:after {
+    display: table;
+    content: "";
+  }
+  .ribbon:after {
+    clear: both;
+  }
+  .ribbon:before,
+  .ribbon:after {
+    display: table;
+    content: "";
+  }
+  .ribbon:after {
+    clear: both;
   }
   .ribbon span {
     font-family: Menlo, Monaco, "Courier New", monospace;
@@ -1892,7 +1932,6 @@ pre {
   background-color: #C0DEED;
   background-image: url(/img/tw_wh.png);
   background-repeat: no-repeat;
-  background-position: center center;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
   -ms-transition: background-color 1s ease;
@@ -1912,7 +1951,6 @@ pre {
   background-color: #f89406;
   background-image: url(/img/r_wh.png);
   background-repeat: no-repeat;
-  background-position: center center;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
   -ms-transition: background-color 1s ease;
@@ -3309,7 +3347,19 @@ body {
     margin-left: 30px;
   }
 }
+.visible-small-phone {
+  display: none;
+}
+.hidden-small-phone {
+  display: block;
+}
 @media (max-width: 480px) {
+  .visible-small-phone {
+    display: block;
+  }
+  .hidden-small-phone {
+    display: none;
+  }
   .navbar-fixed-top {
     margin-left: -20px;
     margin-right: -20px;

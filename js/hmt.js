@@ -1,7 +1,14 @@
 jQuery(function($) {
 
+<<<<<<< HEAD
 	if (!window.prettyPrint) { return false };
 	
+=======
+	// Return immediately if not on an article page (js is still loaded because minified as
+	// a single file with bootstrap)
+	if (!window.prettyPrint) { return false; }
+
+>>>>>>> phone-ribbons
 	var $share = $(".share-initial"),
 		$h1 = $("h1");
 

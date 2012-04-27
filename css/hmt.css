@@ -1890,6 +1890,8 @@ pre {
 }
 @media (min-width: 481px) {
   .ribbon {
+    *zoom: 1;
+    *zoom: 1;
     margin-right: 10px;
     display: inline-block;
     color: black;
@@ -1903,6 +1905,22 @@ pre {
     -moz-border-bottom-right-radius: 9px;
     border-bottom-right-radius: 9px;
     text-align: center;
+  }
+  .ribbon:before,
+  .ribbon:after {
+    display: table;
+    content: "";
+  }
+  .ribbon:after {
+    clear: both;
+  }
+  .ribbon:before,
+  .ribbon:after {
+    display: table;
+    content: "";
+  }
+  .ribbon:after {
+    clear: both;
   }
   .ribbon span {
     font-family: Menlo, Monaco, "Courier New", monospace;
@@ -3329,7 +3347,19 @@ body {
     margin-left: 30px;
   }
 }
+.visible-small-phone {
+  display: none;
+}
+.hidden-small-phone {
+  display: block;
+}
 @media (max-width: 480px) {
+  .visible-small-phone {
+    display: block;
+  }
+  .hidden-small-phone {
+    display: none;
+  }
   .navbar-fixed-top {
     margin-left: -20px;
     margin-right: -20px;

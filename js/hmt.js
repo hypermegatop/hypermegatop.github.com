@@ -1,4 +1,7 @@
 jQuery(function($) {
+
+	if (!window.prettyPrint) { return false };
+	
 	var $share = $(".share-initial"),
 		$h1 = $("h1");
 

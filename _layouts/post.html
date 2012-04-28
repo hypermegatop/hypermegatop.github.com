@@ -32,7 +32,7 @@ layout: master
 		<p>Publié dans <em>
 			{% for catg in page.categories %}
 			<a href="/categories/{{ catg }}">{{ catg }}</a>
-			&nbsp;
+      {% if forloop.last == false %},{% endif %}
 			{% endfor %}
 		</em></p>
 	</div>

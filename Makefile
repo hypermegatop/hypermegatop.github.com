@@ -19,7 +19,10 @@ less:
 js: 
 	cat $(JS) | ./node_modules/.bin/uglifyjs -o $(JS_MIN)
 
+categories: 
+	cp -r ./_site/categories ./categories
+
 clean:
 	rm -f ./css/bootstrap*.css ./css/hmt*.css ./js/*.min.js
 
-.PHONY: clean less run js
+.PHONY: clean less run js categories

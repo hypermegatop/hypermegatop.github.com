@@ -8,3 +8,4 @@ title: "hypermégatop, parfois"
 url: http://hypermegatop.github.com
 description: "Blogue technologique sur node.js, backbone et autres merveilles Javascript."
 category_title_prefix: "Catégorie: "
+exclude: categories

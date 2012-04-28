@@ -6,6 +6,7 @@ JS = ./js/bootstrap.custom.js ./js/hmt.js
 JS_MIN = ./js/hmt.min.js
 
 run: 
+	$(MAKE) clean-cat
 	jekyll --server
 
 less: 
@@ -19,10 +20,14 @@ less:
 js: 
 	cat $(JS) | ./node_modules/.bin/uglifyjs -o $(JS_MIN)
 
-categories: 
+categories:
+	rm -f -r ./categories/
 	cp -r ./_site/categories ./categories
+
+clean-cat:
+	rm -f -r ./_site/categories/
 
 clean:
 	rm -f ./css/bootstrap*.css ./css/hmt*.css ./js/*.min.js
 
-.PHONY: clean less run js categories
+.PHONY: clean less run js categories clean-cat

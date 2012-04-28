@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Structurer une application Web avec Express et Node.js"
-category: technologie
+categories: node express
 author: Martin Angers
 abstract: "La façon d'organiser son code, en divers répertoires et fichiers, est en bonne partie une question de préférence personnelle. Le cadre d'application Web Express n'impose aucune structure particulière, laissant le développeur totalement libre d'arranger le tout selon son inspiration du moment. Cette liberté peut parfois donner le vertige et provoquer un effet pervers: le syndrome de la page blanche."
 ---

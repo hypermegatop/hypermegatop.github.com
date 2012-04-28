@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Propriétés calculées avec Backbone"
-category: technologie
+categories: backbone librairie
 author: Martin Angers
 abstract: La beauté de l'univers du code libre est que lorsqu'il manque une fonctionnalité, on peut se retrousser les manches, ouvrir le code et l'ajouter. Voici ma petite histoire des propriétés calculées avec Backbone.
 ---

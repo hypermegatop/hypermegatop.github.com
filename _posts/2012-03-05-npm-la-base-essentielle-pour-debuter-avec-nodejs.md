@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "npm: la base essentielle pour débuter avec node.js"
-category: technologie
+categories: node npm
 author: Martin Angers
 abstract: La plateforme node.js est volontairement limitée, en son coeur, aux fonctionnalités les plus fondamentales. Elle mise donc sur les contributions de sa communauté pour enrichir le noyau et repousser les limites du possible. Avec près de 8000 librairies à ce jour, il y a sérieux danger de chaos. Et si on y retrouve plutôt quelque chose comme une belle organisation, c'est en bonne partie grâce au gestionnaire de librairies npm. 
 ---

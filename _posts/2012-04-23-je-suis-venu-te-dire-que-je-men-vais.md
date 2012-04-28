@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Je suis venu te dire que je m'en vais"
-category: technologie
+categories: blogue
 author: Martin Angers
 abstract: Ou plutôt, "je suis venu te dire qu'on m'évince", mais ça "punch" moins... En effet, mon coup de foudre pour le blogiciel Calepin aura finalement été son baiser de la mort. Sur Twitter la semaine dernière, via le canal officiel du site, on apprenait que c'était la fin des haricots.
 ---

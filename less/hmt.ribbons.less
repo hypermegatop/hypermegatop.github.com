@@ -28,19 +28,15 @@
 
 @media (min-width: 481px) {
 	.ribbon {
-		margin-right: 10px;
-		display: inline-block;
-		color: black;
-		background-color: white;
-		background-position: center center;
-		width: 40px;
 		.border-bottom-left-radius(9px);
 		.border-bottom-right-radius(9px);
-		text-align: center;
-		span {
-			#font > #family > .monospace;
-			font-size: @baseFontSize * .850;
-		}
+		background-color: white;
+		background-position: center center;
+		color: black;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		width: 40px;
 	}
 }
 
@@ -48,7 +44,9 @@
 	background-color: #C0DEED;
 	background-image: url(/img/tw_wh.png);
 	background-repeat: no-repeat;
+	right: 10px;
 	.transition(background-color 1s ease);
+
 	&:hover {
 		background-color: white;
 		background-image: url(/img/tw_bl.png);
@@ -59,6 +57,7 @@
 	background-color: @orange;
 	background-image: url(/img/r_wh.png);
 	background-repeat: no-repeat;
+	right: 60px;
 	.transition(background-color 1s ease);
 
 	&:hover {

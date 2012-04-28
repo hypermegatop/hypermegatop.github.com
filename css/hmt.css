@@ -1890,30 +1890,26 @@ pre {
 }
 @media (min-width: 481px) {
   .ribbon {
-    margin-right: 10px;
-    display: inline-block;
-    color: black;
-    background-color: white;
-    background-position: center center;
-    width: 40px;
     -webkit-border-bottom-left-radius: 9px;
     -moz-border-bottom-left-radius: 9px;
     border-bottom-left-radius: 9px;
     -webkit-border-bottom-right-radius: 9px;
     -moz-border-bottom-right-radius: 9px;
     border-bottom-right-radius: 9px;
-    text-align: center;
-  }
-  .ribbon span {
-    font-family: Menlo, Monaco, "Courier New", monospace;
-    font-family: Menlo, Monaco, "Courier New", monospace;
-    font-size: 13.6px;
+    background-color: white;
+    background-position: center center;
+    color: black;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 40px;
   }
 }
 .ribbon-twitter {
   background-color: #C0DEED;
   background-image: url(/img/tw_wh.png);
   background-repeat: no-repeat;
+  right: 10px;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
   -ms-transition: background-color 1s ease;
@@ -1933,6 +1929,7 @@ pre {
   background-color: #f89406;
   background-image: url(/img/r_wh.png);
   background-repeat: no-repeat;
+  right: 60px;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
   -ms-transition: background-color 1s ease;

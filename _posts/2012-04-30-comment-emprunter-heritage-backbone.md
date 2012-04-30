@@ -3,15 +3,14 @@ layout: post
 title: "Comment emprunter l'héritage de Backbone"
 categories: backbone
 author: Martin Angers
-published: false
 abstract: L'héritage par prototypage de Javascript n'est ni trivial, ni abominablement complexe. Il est cependant tout sauf intuitif à bien mettre en place. Heureusement, dans une application Web utilisant déjà Backbone, on peut facilement profiter de l'implémentation de cette librairie pour définir nos classes.
 ---
 
-L'héritage par prototypage de Javascript n'est ni trivial, ni abominablement complexe. Il est cependant tout sauf intuitif à bien mettre en place. Heureusement, dans une application Web utilisant déjà [Backbone][bb], on peut facilement profiter de l'implémentation de cette librairie pour définir nos classes.
+L'héritage par prototypage de Javascript n'est ni trivial, ni abominablement complexe. Il est cependant tout sauf intuitif à bien mettre en place. Heureusement, dans une application Web utilisant déjà [Backbone][bb], on peut facilement profiter de l'implémentation de cette librairie pour définir nos classes. Petit truc simplissime, mais fort utile.
 
 ### Une fonction dans une classe à part
 
-Colin Moock résume bien le problème des "classes" avec Javascript dans [cet article][moock] découvert via [@jsgeneve][jsg] (avant de sombrer dans de doûteuses déclarations et critiques du langage). Le fait que ce soit une `function` comme une autre qui, si utilisée avec le mot-clef `new` devient un "constructeur de classe", n'est certes pas l'idée du siècle. La convention de la lettre majuscule est une bien mince protection contre une mauvaise utilisation. Sans parler de la mise en place requise de la chaîne de prototypes pour un héritage "dans les règles". En attendant [l'introduction de classes comme citoyennes de première... euh... classe][classes] qui viendra peut-être avec [Harmony][], il faut vivre avec ces imperfections.
+Colin Moock résume bien le problème des "classes" avec Javascript dans [cet article][moock] découvert via [@jsgeneve][jsg] (par la suite il sombre dans de doûteuses déclarations et critiques du langage). Le fait que ce soit une `function` comme une autre qui, si utilisée avec le mot-clef `new` devient un "constructeur de classe", n'est certes pas l'idée du siècle. La convention de la lettre majuscule pour identifier un constructeur est une bien mince protection contre une mauvaise utilisation. Sans parler de la mise en place requise de la chaîne de prototypes pour un héritage "dans les règles". En attendant [l'introduction de classes comme citoyennes de première... euh... classe][classes] qui viendra peut-être avec [Harmony][], il faut vivre avec ces imperfections.
 
 Ce qui nous amène à Backbone et son approche élégante d'héritage. On veut créer un nouveau modèle? `var MonModele = Backbone.Model.extend({/* propriétés d'instance de la nouvelle classe */}, {/* propriétés statiques de la nouvelle classe */})`. Idem pour une nouvelle classe héritant de `Backbone.View`, `Collection` et `Router` (`Backbone.Events` n'est pas une classe/fonction constructeur, c'est un objet qui peut être ajouté au prototype d'une autre classe pour bénéficier de ses fonctionnalités, ou "cloné" pour être utilisé tel quel). Le hic, pour utiliser cette approche, c'est qu'on n'a pas le choix d'hériter d'une classe de Backbone, avec tout son bagage.
 
@@ -60,9 +59,11 @@ Les deux méthodes ont donc des objectifs distincts, et sont souvent complément
         Backbone.Events)
       )
 
-### Alternative
+    alert(BaseEtEvents instanceof BaseObject) // Affiche "true"
 
-Juste comme je terminais cet article, Isaac Schlueter rappelait sur Twitter l'existence de sa micro-librairie [inherits][izs]. Une dizaine de lignes de code pour accomplir grosso modo l'effet discuté ici. Il y a plusieurs autres implémentations semblables de méthode pour faire de l'héritage, mais lorsqu'on utilise déjà Backbone dans son projet, la solution que je présente ici est fort peu coûteuse.
+### Alternatives
+
+Juste comme je terminais cet article, Isaac Schlueter rappelait sur Twitter l'existence de sa micro-librairie [inherits][izs]. Une dizaine de lignes de code pour accomplir grosso modo ce que l'on vient d'aborder. Il y a plusieurs autres implémentations semblables - `goog.inherits()` en est une autre - pour faire de l'héritage, mais lorsqu'on utilise déjà Backbone dans son projet, la solution que je présente ici est fort peu coûteuse.
 
 ### Un mot sur ce nouveau site
 

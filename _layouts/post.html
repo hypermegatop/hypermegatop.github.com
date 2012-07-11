@@ -4,37 +4,24 @@ layout: master
 <article class="hentry">
 	<header class="entry-header">
       <time class="published" datetime='{{ page.date | date:"%Y-%m-%d" }}'>{% include date-month-french.html %}</time>
-      <h1 class="instapaper_title"><span>{{ page.title }}</span>&nbsp;<a href="#"><i class="icon-share-alt" title="Partager"></i></a>
+      <h1 class="instapaper_title share"><span>{{ page.title }}</span>&nbsp;<a href="#"><i class="icon-share-alt" title="Partager"></i></a>
       </h1>
-      <div class="share-initial">
-      	<ul class="like-buttons well">
-			<li class="like-flattr">
-				<a href="https://flattr.com/submit/auto?user_id=PuerkitoBio&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}&language=fr_FR">
-					<img src="/img/fl.png" alt="Partager avec Flattr"></img>
-				</a>
-			</li>
-      		<li class="like-twitter">
-				<a href="//twitter.com/share" class="twitter-share-button" data-via="PuerkitoBio" data-lang="fr">Tweeter</a>
-			</li>
-			<li class="like-gplus">
-				<g:plusone size="medium"></g:plusone>
-			</li>
-			<li class="like-facebook">
-				<fb:like href="{{ site.url }}{{ page.url }}" send="false" layout="button_count" show_faces="false" action="like" width="130px" style="display: block; float: left; margin: 0; padding: 0;"></fb:like>
-			</li>
-		</ul>
-      </div>
+      {% include share.html %}
     </header>
 	<div class="instapaper_body entry-content">
 		{{ content }}
 	</div>
 	<div class="metadata">
-		<p>Publié dans <em>
+		<p>
+      Publié dans <em>
 			{% for catg in page.categories %}
 			<a href="/categories/{{ catg }}">{{ catg }}</a>
       {% if forloop.last == false %},{% endif %}
 			{% endfor %}
-		</em></p>
+		  </em>. <a href="#"><span class="share">Partagez, ça ne fait pas mal</span></a>.
+    </p>
+
+    {% include share.html %}
 	</div>
 	<div class="comments">
 		<div id="disqus_thread"></div>

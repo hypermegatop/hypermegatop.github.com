@@ -6,7 +6,6 @@ JS = ./js/bootstrap.custom.js ./js/hmt.js
 JS_MIN = ./js/hmt.min.js
 
 run: 
-	$(MAKE) clean-cat
 	jekyll --server
 
 less: 
